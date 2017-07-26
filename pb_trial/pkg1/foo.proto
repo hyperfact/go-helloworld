@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package pkg1;
+
+option go_package = "helloworld/pb_trial/pkg1";
+
+import "pkg1/pkg11/bar.proto";
+
+message Foo {
+    pkg1.pkg11.Bar bar = 1;
+}
